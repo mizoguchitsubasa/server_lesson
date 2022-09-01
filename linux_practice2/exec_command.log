@@ -1,0 +1,50 @@
+    1  cd /root
+    2  mkdir server_lesson && cd server_lesson
+    3  yum update -y && yum -y install git
+    4  git version
+    5  git init
+    6  touch first.txt
+    7  git status
+    8  git add .
+    9  git status
+   10  git commit -m 'first commit'
+   11  git config --global user.email tsubasamizoguchi10@gmail.com
+   12  git config --global user.name mizoguchitsubasa
+   13  git commit -m 'first commit'
+   14  git status
+   15  git log
+   16  git remote add origin https://github.com/mizoguchitsubasa/server_lesson.git
+   17  git remote -v
+   18  git push origin master
+   19  git push origin master
+   20  mkdir linux_practice1 && cd linux_practice1
+   21  mkdir public && cd public
+   22  touch index.php
+   23  cp index.php index_bk.php
+   24  ls
+   25  cd ..
+   26  cp -r public tmp
+   27  ls
+   28  rm tmp/index_bk.php
+   29  ls tmp
+   30  cd ..
+   31  touch README.md
+   32  ls
+   33  vi README.md
+   34  cat README.md
+   35  mkdir linux_practice2 && cd linux_practice2
+   36  mkdir documents && cd documents
+   37  touch gizumo{1..50}.md
+   38  ls
+   39  cd ..
+   40  mkdir trash
+   41  mv documents/gizumo{20..40}.md trash/gizumo{20..40}.md
+   42  ls
+   43  ls documents
+   44  mv documents/gizumo{20..40}.md trash
+   45  ls trash
+   46  touch .gitignore
+   47  ls -a
+   48  vi .gitignore
+   49  cat .gitignore
+   50  history 300 >> exec_command.log
